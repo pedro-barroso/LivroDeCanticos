@@ -353,6 +353,8 @@
 		8A182E0717C66F480029E3FE /* c149.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = c149.txt; sourceTree = "<group>"; };
 		8A182E0817C66F480029E3FE /* c150.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = c150.txt; sourceTree = "<group>"; };
 		8A182E0917C66F480029E3FE /* indice.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = indice.txt; sourceTree = "<group>"; };
+		8A182EA117C6AFF10029E3FE /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "pt-PT"; path = "pt-PT.lproj/MainStoryboard.storyboard"; sourceTree = "<group>"; };
+		8A182EA217C6AFF10029E3FE /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -625,6 +627,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"pt-PT",
 			);
 			mainGroup = 8A182D3217C63B9C0029E3FE;
 			productRefGroup = 8A182D3C17C63B9C0029E3FE /* Products */;
@@ -826,6 +829,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8A182D4817C63B9C0029E3FE /* en */,
+				8A182EA217C6AFF10029E3FE /* pt-PT */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -834,6 +838,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8A182D5717C63B9C0029E3FE /* en */,
+				8A182EA117C6AFF10029E3FE /* pt-PT */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";

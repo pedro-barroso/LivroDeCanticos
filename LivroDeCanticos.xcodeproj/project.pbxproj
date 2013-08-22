@@ -20,9 +20,9 @@
 		8A182D5B17C63B9C0029E3FE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A182D5A17C63B9C0029E3FE /* FirstViewController.m */; };
 		8A182D5D17C63B9C0029E3FE /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A182D5C17C63B9C0029E3FE /* first.png */; };
 		8A182D5F17C63B9C0029E3FE /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A182D5E17C63B9C0029E3FE /* first@2x.png */; };
-		8A182D6217C63B9C0029E3FE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A182D6117C63B9C0029E3FE /* SecondViewController.m */; };
 		8A182D6417C63B9C0029E3FE /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A182D6317C63B9C0029E3FE /* second.png */; };
 		8A182D6617C63B9C0029E3FE /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A182D6517C63B9C0029E3FE /* second@2x.png */; };
+		8A182D6E17C63BD50029E3FE /* Indice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A182D6D17C63BD50029E3FE /* Indice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,10 +44,10 @@
 		8A182D5A17C63B9C0029E3FE /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		8A182D5C17C63B9C0029E3FE /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		8A182D5E17C63B9C0029E3FE /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		8A182D6017C63B9C0029E3FE /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		8A182D6117C63B9C0029E3FE /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		8A182D6317C63B9C0029E3FE /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		8A182D6517C63B9C0029E3FE /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		8A182D6C17C63BD50029E3FE /* Indice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Indice.h; sourceTree = "<group>"; };
+		8A182D6D17C63BD50029E3FE /* Indice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Indice.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,8 @@
 				8A182D5A17C63B9C0029E3FE /* FirstViewController.m */,
 				8A182D5C17C63B9C0029E3FE /* first.png */,
 				8A182D5E17C63B9C0029E3FE /* first@2x.png */,
-				8A182D6017C63B9C0029E3FE /* SecondViewController.h */,
-				8A182D6117C63B9C0029E3FE /* SecondViewController.m */,
+				8A182D6C17C63BD50029E3FE /* Indice.h */,
+				8A182D6D17C63BD50029E3FE /* Indice.m */,
 				8A182D6317C63B9C0029E3FE /* second.png */,
 				8A182D6517C63B9C0029E3FE /* second@2x.png */,
 				8A182D4517C63B9C0029E3FE /* Supporting Files */,
@@ -197,7 +197,7 @@
 				8A182D4B17C63B9C0029E3FE /* main.m in Sources */,
 				8A182D4F17C63B9C0029E3FE /* AppDelegate.m in Sources */,
 				8A182D5B17C63B9C0029E3FE /* FirstViewController.m in Sources */,
-				8A182D6217C63B9C0029E3FE /* SecondViewController.m in Sources */,
+				8A182D6E17C63BD50029E3FE /* Indice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A182D3F17C63B9C0029E3FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A182D3E17C63B9C0029E3FE /* UIKit.framework */; };
+		8A182D4117C63B9C0029E3FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A182D4017C63B9C0029E3FE /* Foundation.framework */; };
+		8A182D4317C63B9C0029E3FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A182D4217C63B9C0029E3FE /* CoreGraphics.framework */; };
+		8A182D4917C63B9C0029E3FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A182D4717C63B9C0029E3FE /* InfoPlist.strings */; };
+		8A182D4B17C63B9C0029E3FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A182D4A17C63B9C0029E3FE /* main.m */; };
+		8A182D4F17C63B9C0029E3FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A182D4E17C63B9C0029E3FE /* AppDelegate.m */; };
+		8A182D5117C63B9C0029E3FE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A182D5017C63B9C0029E3FE /* Default.png */; };
+		8A182D5317C63B9C0029E3FE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A182D5217C63B9C0029E3FE /* Default@2x.png */; };
+		8A182D5517C63B9C0029E3FE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A182D5417C63B9C0029E3FE /* Default-568h@2x.png */; };
+		8A182D5817C63B9C0029E3FE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A182D5617C63B9C0029E3FE /* MainStoryboard.storyboard */; };
+		8A182D5B17C63B9C0029E3FE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A182D5A17C63B9C0029E3FE /* FirstViewController.m */; };
+		8A182D5D17C63B9C0029E3FE /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A182D5C17C63B9C0029E3FE /* first.png */; };
+		8A182D5F17C63B9C0029E3FE /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A182D5E17C63B9C0029E3FE /* first@2x.png */; };
+		8A182D6217C63B9C0029E3FE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A182D6117C63B9C0029E3FE /* SecondViewController.m */; };
+		8A182D6417C63B9C0029E3FE /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A182D6317C63B9C0029E3FE /* second.png */; };
+		8A182D6617C63B9C0029E3FE /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A182D6517C63B9C0029E3FE /* second@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8A182D3B17C63B9C0029E3FE /* LivroDeCanticos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivroDeCanticos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A182D3E17C63B9C0029E3FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8A182D4017C63B9C0029E3FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8A182D4217C63B9C0029E3FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8A182D4617C63B9C0029E3FE /* LivroDeCanticos-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LivroDeCanticos-Info.plist"; sourceTree = "<group>"; };
+		8A182D4817C63B9C0029E3FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A182D4A17C63B9C0029E3FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A182D4C17C63B9C0029E3FE /* LivroDeCanticos-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LivroDeCanticos-Prefix.pch"; sourceTree = "<group>"; };
+		8A182D4D17C63B9C0029E3FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A182D4E17C63B9C0029E3FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A182D5017C63B9C0029E3FE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8A182D5217C63B9C0029E3FE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8A182D5417C63B9C0029E3FE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8A182D5717C63B9C0029E3FE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		8A182D5917C63B9C0029E3FE /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		8A182D5A17C63B9C0029E3FE /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		8A182D5C17C63B9C0029E3FE /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		8A182D5E17C63B9C0029E3FE /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		8A182D6017C63B9C0029E3FE /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		8A182D6117C63B9C0029E3FE /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		8A182D6317C63B9C0029E3FE /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		8A182D6517C63B9C0029E3FE /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A182D3817C63B9C0029E3FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A182D3F17C63B9C0029E3FE /* UIKit.framework in Frameworks */,
+				8A182D4117C63B9C0029E3FE /* Foundation.framework in Frameworks */,
+				8A182D4317C63B9C0029E3FE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A182D3217C63B9C0029E3FE = {
+			isa = PBXGroup;
+			children = (
+				8A182D4417C63B9C0029E3FE /* LivroDeCanticos */,
+				8A182D3D17C63B9C0029E3FE /* Frameworks */,
+				8A182D3C17C63B9C0029E3FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A182D3C17C63B9C0029E3FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A182D3B17C63B9C0029E3FE /* LivroDeCanticos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A182D3D17C63B9C0029E3FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A182D3E17C63B9C0029E3FE /* UIKit.framework */,
+				8A182D4017C63B9C0029E3FE /* Foundation.framework */,
+				8A182D4217C63B9C0029E3FE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A182D4417C63B9C0029E3FE /* LivroDeCanticos */ = {
+			isa = PBXGroup;
+			children = (
+				8A182D4D17C63B9C0029E3FE /* AppDelegate.h */,
+				8A182D4E17C63B9C0029E3FE /* AppDelegate.m */,
+				8A182D5617C63B9C0029E3FE /* MainStoryboard.storyboard */,
+				8A182D5917C63B9C0029E3FE /* FirstViewController.h */,
+				8A182D5A17C63B9C0029E3FE /* FirstViewController.m */,
+				8A182D5C17C63B9C0029E3FE /* first.png */,
+				8A182D5E17C63B9C0029E3FE /* first@2x.png */,
+				8A182D6017C63B9C0029E3FE /* SecondViewController.h */,
+				8A182D6117C63B9C0029E3FE /* SecondViewController.m */,
+				8A182D6317C63B9C0029E3FE /* second.png */,
+				8A182D6517C63B9C0029E3FE /* second@2x.png */,
+				8A182D4517C63B9C0029E3FE /* Supporting Files */,
+			);
+			path = LivroDeCanticos;
+			sourceTree = "<group>";
+		};
+		8A182D4517C63B9C0029E3FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A182D4617C63B9C0029E3FE /* LivroDeCanticos-Info.plist */,
+				8A182D4717C63B9C0029E3FE /* InfoPlist.strings */,
+				8A182D4A17C63B9C0029E3FE /* main.m */,
+				8A182D4C17C63B9C0029E3FE /* LivroDeCanticos-Prefix.pch */,
+				8A182D5017C63B9C0029E3FE /* Default.png */,
+				8A182D5217C63B9C0029E3FE /* Default@2x.png */,
+				8A182D5417C63B9C0029E3FE /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A182D3A17C63B9C0029E3FE /* LivroDeCanticos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A182D6917C63B9C0029E3FE /* Build configuration list for PBXNativeTarget "LivroDeCanticos" */;
+			buildPhases = (
+				8A182D3717C63B9C0029E3FE /* Sources */,
+				8A182D3817C63B9C0029E3FE /* Frameworks */,
+				8A182D3917C63B9C0029E3FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LivroDeCanticos;
+			productName = LivroDeCanticos;
+			productReference = 8A182D3B17C63B9C0029E3FE /* LivroDeCanticos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A182D3317C63B9C0029E3FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Pedro Barroso";
+			};
+			buildConfigurationList = 8A182D3617C63B9C0029E3FE /* Build configuration list for PBXProject "LivroDeCanticos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8A182D3217C63B9C0029E3FE;
+			productRefGroup = 8A182D3C17C63B9C0029E3FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A182D3A17C63B9C0029E3FE /* LivroDeCanticos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A182D3917C63B9C0029E3FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A182D4917C63B9C0029E3FE /* InfoPlist.strings in Resources */,
+				8A182D5117C63B9C0029E3FE /* Default.png in Resources */,
+				8A182D5317C63B9C0029E3FE /* Default@2x.png in Resources */,
+				8A182D5517C63B9C0029E3FE /* Default-568h@2x.png in Resources */,
+				8A182D5817C63B9C0029E3FE /* MainStoryboard.storyboard in Resources */,
+				8A182D5D17C63B9C0029E3FE /* first.png in Resources */,
+				8A182D5F17C63B9C0029E3FE /* first@2x.png in Resources */,
+				8A182D6417C63B9C0029E3FE /* second.png in Resources */,
+				8A182D6617C63B9C0029E3FE /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A182D3717C63B9C0029E3FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A182D4B17C63B9C0029E3FE /* main.m in Sources */,
+				8A182D4F17C63B9C0029E3FE /* AppDelegate.m in Sources */,
+				8A182D5B17C63B9C0029E3FE /* FirstViewController.m in Sources */,
+				8A182D6217C63B9C0029E3FE /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8A182D4717C63B9C0029E3FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A182D4817C63B9C0029E3FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8A182D5617C63B9C0029E3FE /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A182D5717C63B9C0029E3FE /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A182D6717C63B9C0029E3FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8A182D6817C63B9C0029E3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A182D6A17C63B9C0029E3FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LivroDeCanticos/LivroDeCanticos-Prefix.pch";
+				INFOPLIST_FILE = "LivroDeCanticos/LivroDeCanticos-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8A182D6B17C63B9C0029E3FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LivroDeCanticos/LivroDeCanticos-Prefix.pch";
+				INFOPLIST_FILE = "LivroDeCanticos/LivroDeCanticos-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A182D3617C63B9C0029E3FE /* Build configuration list for PBXProject "LivroDeCanticos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A182D6717C63B9C0029E3FE /* Debug */,
+				8A182D6817C63B9C0029E3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A182D6917C63B9C0029E3FE /* Build configuration list for PBXNativeTarget "LivroDeCanticos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A182D6A17C63B9C0029E3FE /* Debug */,
+				8A182D6B17C63B9C0029E3FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A182D3317C63B9C0029E3FE /* Project object */;
+}

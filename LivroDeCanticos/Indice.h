@@ -10,4 +10,6 @@
 
 @interface Indice : UITableViewController
 
+@property(strong, nonatomic) NSMutableArray * indiceArray;
+
 @end

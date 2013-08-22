@@ -7,12 +7,14 @@
 //
 
 #import "Indice.h"
+#import "Cantico.h"
 
 @interface Indice ()
 
 @end
 
 @implementation Indice
+@synthesize indiceArray;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -26,12 +28,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Indice";
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    indiceArray = [[NSMutableArray alloc]init];
+    int i = 0;
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"indice"
+                                                     ofType:@"txt"];
+
+    NSString *fileContents = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
+    
+    for (NSString *line in [fileContents componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]]) {
+        if (![line isEqualToString:@""]) {
+            [indiceArray insertObject:line atIndex:i];
+            i++;
+        }
+        
+    }    
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,26 +56,40 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return indiceArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //Create an NSString object that we can use as the reuse identifier
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+    //Check to see if we can reuse a cell from a row that has just rolled off the screen
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
+    //If there are no cells to be reused, create a new cell
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    //Set the text attribute to whatever we are currently looking at in our array
+    cell.textLabel.text = [indiceArray objectAtIndex:indexPath.row];
+    
+    //Set the detail disclosure indicator
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
+    cell.textLabel.font = [UIFont fontWithName:@"ChalkboardSE-Bold" size:15];
+    
+    //Return the cell
     return cell;
+
 }
 
 /*
@@ -105,17 +131,21 @@
 }
 */
 
-#pragma mark - Table view delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    //Create a DetailViewController Object
+    Cantico * cant = [[Cantico alloc]init];
+    
+    //Set DVC to the destinationViewController property of the segue
+    cant = [segue destinationViewController];
+    
+    
+    //Get the indexpath
+    NSIndexPath * path = [self.tableView indexPathForSelectedRow];
+    
+    NSString * titulo = [indiceArray objectAtIndex:path.row];
+    
+    cant.canticoNum = path.row;
+    cant.canticoTitulo = titulo;
 }
-
 @end

@@ -175,6 +175,9 @@
 		8A182E9E17C66F480029E3FE /* c149.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A182E0717C66F480029E3FE /* c149.txt */; };
 		8A182E9F17C66F480029E3FE /* c150.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A182E0817C66F480029E3FE /* c150.txt */; };
 		8A182EA017C66F480029E3FE /* indice.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A182E0917C66F480029E3FE /* indice.txt */; };
+		8A774D2F17C6C4900027D7DE /* lupa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A774D2D17C6C48F0027D7DE /* lupa@2x.png */; };
+		8A774D3017C6C4900027D7DE /* lupa.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A774D2E17C6C48F0027D7DE /* lupa.png */; };
+		8A774D3417C6C82B0027D7DE /* index-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A774D3317C6C82B0027D7DE /* index-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -353,8 +356,9 @@
 		8A182E0717C66F480029E3FE /* c149.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = c149.txt; sourceTree = "<group>"; };
 		8A182E0817C66F480029E3FE /* c150.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = c150.txt; sourceTree = "<group>"; };
 		8A182E0917C66F480029E3FE /* indice.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = indice.txt; sourceTree = "<group>"; };
-		8A182EA117C6AFF10029E3FE /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "pt-PT"; path = "pt-PT.lproj/MainStoryboard.storyboard"; sourceTree = "<group>"; };
-		8A182EA217C6AFF10029E3FE /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		8A774D2D17C6C48F0027D7DE /* lupa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lupa@2x.png"; sourceTree = "<group>"; };
+		8A774D2E17C6C48F0027D7DE /* lupa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lupa.png; sourceTree = "<group>"; };
+		8A774D3317C6C82B0027D7DE /* index-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "index-icon.png"; path = "../index-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +405,9 @@
 		8A182D4417C63B9C0029E3FE /* LivroDeCanticos */ = {
 			isa = PBXGroup;
 			children = (
+				8A774D3317C6C82B0027D7DE /* index-icon.png */,
+				8A774D2D17C6C48F0027D7DE /* lupa@2x.png */,
+				8A774D2E17C6C48F0027D7DE /* lupa.png */,
 				8A182D4D17C63B9C0029E3FE /* AppDelegate.h */,
 				8A182D4E17C63B9C0029E3FE /* AppDelegate.m */,
 				8A182D5617C63B9C0029E3FE /* MainStoryboard.storyboard */,
@@ -804,6 +811,9 @@
 				8A182E9E17C66F480029E3FE /* c149.txt in Resources */,
 				8A182E9F17C66F480029E3FE /* c150.txt in Resources */,
 				8A182EA017C66F480029E3FE /* indice.txt in Resources */,
+				8A774D2F17C6C4900027D7DE /* lupa@2x.png in Resources */,
+				8A774D3017C6C4900027D7DE /* lupa.png in Resources */,
+				8A774D3417C6C82B0027D7DE /* index-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -829,7 +839,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				8A182D4817C63B9C0029E3FE /* en */,
-				8A182EA217C6AFF10029E3FE /* pt-PT */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -838,7 +847,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				8A182D5717C63B9C0029E3FE /* en */,
-				8A182EA117C6AFF10029E3FE /* pt-PT */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
@@ -943,6 +951,7 @@
 				8A182D6B17C63B9C0029E3FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

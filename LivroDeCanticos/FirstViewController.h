@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface FirstViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UISearchBar *procura;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *select;
+@property (strong, nonatomic) NSString *texto;
 @end

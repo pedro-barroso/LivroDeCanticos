@@ -10,7 +10,6 @@
 
 @interface Cantico : UIViewController
 @property (weak, nonatomic) IBOutlet UITextView *canticoText;
-@property(nonatomic, strong) NSString * canticoTitulo;
 @property int canticoNum;
 
 @end

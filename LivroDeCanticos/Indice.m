@@ -145,7 +145,7 @@
     
     NSString * titulo = [indiceArray objectAtIndex:path.row];
     
-    cant.canticoNum = path.row;
-    cant.canticoTitulo = titulo;
+    cant.canticoNum = path.row+1;
+//    cant.canticoTitulo = titulo;
 }
 @end

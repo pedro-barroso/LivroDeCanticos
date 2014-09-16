@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface FirstViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UISearchBar *procura;
+@property (weak, nonatomic) IBOutlet UISearchDisplayController *procura;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *select;
+//@property (weak, nonatomic) IBOutlet UILabel *label;
 @property (strong, nonatomic) NSString *texto;
 @end

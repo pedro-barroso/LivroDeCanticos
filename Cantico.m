@@ -50,7 +50,6 @@
     label.backgroundColor = [UIColor clearColor];
     label.textColor = [UIColor whiteColor];
     label.font = [UIFont fontWithName:@"Arial-BoldMT" size:18];
-    label.textAlignment = UITextAlignmentCenter;
     self.navigationItem.titleView = label;
     label.text = self.title;
     i++;

@@ -20,6 +20,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.title = @"Pesquisa";
+    [procura displaysSearchBarInNavigationBar];
+     NSLog(@"Pesquisa");
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,6 +33,8 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
     [self handleSearch:searchBar];
+    NSLog(@"User searched for %@", searchBar.text);
+
 }
 
 - (void)handleSearch:(UISearchBar *)searchBar
@@ -39,7 +43,6 @@
     [searchBar resignFirstResponder]; // if you want the keyboard to go away
     
     texto = searchBar.text;
-    [self performSegueWithIdentifier:@"procuraNum" sender:self];
 }
 
 - (void)searchBarCancelButtonClicked:(UISearchBar *) searchBar
@@ -61,6 +64,8 @@
             
             cant.canticoNum =texto.intValue;
         }
+    }else{
+        // procura por texto
     }
     
 }

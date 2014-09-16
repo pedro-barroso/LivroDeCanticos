@@ -143,6 +143,8 @@
     //Get the indexpath
     NSIndexPath * path = [self.tableView indexPathForSelectedRow];
     
+     NSLog(@"do indice para cantico");
+    
     NSString * titulo = [indiceArray objectAtIndex:path.row];
     
     cant.canticoNum = path.row+1;

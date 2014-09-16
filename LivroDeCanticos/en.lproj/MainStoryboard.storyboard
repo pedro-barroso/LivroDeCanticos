@@ -1,55 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--First View Controller - First-->
         <scene sceneID="11">
             <objects>
                 <viewController title="First" id="2" customClass="FirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V3M-wG-t0c"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fxl-mO-DNX"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="16">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="psj-uE-ZPG">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selecione se pretende pesquisar um cantico pelo seu número ou pesquisar uma palavra ou frase em todos os cânticos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="228" translatesAutoresizingMaskIntoConstraints="NO" id="YXt-hd-Jdb">
+                                <rect key="frame" x="46" y="217" width="228" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" fixedFrame="YES" text="" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9PC-Lr-X18">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="1" green="0.0" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hVl-16-Hz6">
+                                <rect key="frame" x="99" y="152" width="125" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Número"/>
                                     <segment title="Texto"/>
                                 </segments>
                             </segmentedControl>
-                            <searchBar contentMode="redraw" restorationIdentifier="" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8sA-B3-7pK">
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="2" id="J9l-qD-KIV"/>
-                                </connections>
-                            </searchBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Selecione se pretende pesquisar um cantico pelo seu número ou pesquisar uma palavra ou frase em todos os cânticos" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1f5-cm-esG">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="113" id="bjM-W3-BBd"/>
-                                    <constraint firstAttribute="width" constant="240" id="zmU-4W-ITL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="8sA-B3-7pK" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="0ia-yR-AcJ"/>
-                            <constraint firstItem="1f5-cm-esG" firstAttribute="centerX" secondItem="8sA-B3-7pK" secondAttribute="centerX" type="default" id="8qV-vs-Qnf"/>
-                            <constraint firstItem="8sA-B3-7pK" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="JNL-Mr-xGX"/>
-                            <constraint firstItem="1f5-cm-esG" firstAttribute="top" secondItem="16" secondAttribute="top" constant="158" id="Mf5-yp-tmX"/>
-                            <constraint firstItem="psj-uE-ZPG" firstAttribute="top" secondItem="16" secondAttribute="top" constant="89" id="fkd-7u-uSt"/>
-                            <constraint firstItem="psj-uE-ZPG" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="72" id="iB4-Pr-HM0"/>
-                            <constraint firstItem="8sA-B3-7pK" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="vfH-9K-8lD"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hUg-dH-0jA"/>
+                    <navigationItem key="navigationItem" title="Title" id="vJE-SY-APT"/>
                     <connections>
-                        <outlet property="procura" destination="8sA-B3-7pK" id="bcl-o0-tTn"/>
-                        <outlet property="select" destination="psj-uE-ZPG" id="wfu-Tx-URH"/>
-                        <segue destination="laV-a2-YwS" kind="push" identifier="procuraNum" id="N1h-n8-sUM"/>
+                        <outlet property="procura" destination="9PC-Lr-X18" id="ZoA-lN-85S"/>
+                        <outlet property="select" destination="hVl-16-Hz6" id="VXz-8I-ESd"/>
+                        <segue destination="laV-a2-YwS" kind="push" identifier="barraPesquisa" id="DTD-fA-de7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
@@ -79,19 +75,18 @@
         <scene sceneID="vGV-mg-R4o">
             <objects>
                 <tableViewController id="voM-4i-uJO" customClass="Indice" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="LGI-d0-n7Z">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="LGI-d0-n7Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="PVr-ie-81H">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PVr-ie-81H" id="XBa-Xc-EwP">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
+                                </tableViewCellContentView>
                                 <connections>
                                     <segue destination="laV-a2-YwS" kind="push" id="VWH-KY-oSY"/>
                                 </connections>
@@ -112,11 +107,16 @@
         <scene sceneID="Wy7-W1-KUG">
             <objects>
                 <viewController storyboardIdentifier="Cantico" title="Cantico" id="laV-a2-YwS" customClass="Cantico" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TwM-8G-zbL"/>
+                        <viewControllerLayoutGuide type="bottom" id="PH2-kI-CVm"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CXs-Mm-cLa">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Cantico" translatesAutoresizingMaskIntoConstraints="NO" id="ZQl-Yz-fk1">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Cantico" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQl-Yz-fk1">
+                                <rect key="frame" x="9" y="76" width="301" height="404"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
@@ -131,9 +131,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZQl-Yz-fk1" firstAttribute="bottom" secondItem="CXs-Mm-cLa" secondAttribute="bottom" type="default" id="Ptq-lS-PdM"/>
-                            <constraint firstItem="ZQl-Yz-fk1" firstAttribute="centerX" secondItem="CXs-Mm-cLa" secondAttribute="centerX" type="default" id="smc-Mg-fhT"/>
-                            <constraint firstItem="ZQl-Yz-fk1" firstAttribute="top" secondItem="CXs-Mm-cLa" secondAttribute="top" type="default" id="tCN-w6-t8V"/>
+                            <constraint firstItem="ZQl-Yz-fk1" firstAttribute="bottom" secondItem="CXs-Mm-cLa" secondAttribute="bottom" id="Ptq-lS-PdM"/>
+                            <constraint firstItem="ZQl-Yz-fk1" firstAttribute="centerX" secondItem="CXs-Mm-cLa" secondAttribute="centerX" id="smc-Mg-fhT"/>
+                            <constraint firstItem="ZQl-Yz-fk1" firstAttribute="top" secondItem="CXs-Mm-cLa" secondAttribute="top" id="tCN-w6-t8V"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="46F-gL-BlD"/>
@@ -176,7 +176,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="2" kind="relationship" relationship="rootViewController" id="3fX-pU-ZCS"/>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="n52-Kp-TuD"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYW-Mz-1OW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -188,33 +188,12 @@
         <image name="index-icon.png" width="28" height="30"/>
         <image name="lupa.png" width="30" height="30"/>
     </resources>
-    <classes>
-        <class className="Cantico" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Cantico.h"/>
-            <relationships>
-                <relationship kind="outlet" name="canticoText" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="FirstViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="procura" candidateClass="UISearchBar"/>
-                <relationship kind="outlet" name="select" candidateClass="UISegmentedControl"/>
-            </relationships>
-        </class>
-        <class className="Indice" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Indice.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="N1h-n8-sUM"/>
+        <segue reference="DTD-fA-de7"/>
     </inferredMetricsTieBreakers>
 </document>
